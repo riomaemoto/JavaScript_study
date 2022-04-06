@@ -158,10 +158,10 @@
 // スプレット構文だとこう書ける（下記）
 // console.log(...arr);
 
-// const tottal = (a, b) => console.log(a + b);
-// tottal(arr[0],arr[1]);
+// const total = (a, b) => console.log(a + b);
+// total(arr[0],arr[1]);
 // スプレット構文だとこう書ける（下記）
-// tottal(...arr);
+// total(...arr);
 
 // const arr = [1, 2, 3, 4, 5, 6];
 // const [a, b, c, ...d] = arr;
@@ -171,7 +171,7 @@
 // // 上記は4,5,6が表示される
 
 // 配列のコピー、結合
-const arr = [10, 20];
+// const arr = [10, 20];
 // const arr3 = [40,60];
 // const arr2 = [...arr];
 // // このように...変数を使っってコピーできる
@@ -224,3 +224,35 @@ const arr = [10, 20];
 //   }
 // })
 // console.log(names);
+
+/**
+ *  --------lesson ８  三項演算子　練習 --------------
+ */
+// 条件　？　ここにtrue の時の処理を書く　：ここはfalse の時の処理を書く；
+// const number = 5 < 0 ? "It's true" : "It's false";
+// console.log(number);
+
+// const number = "1300";
+// console.log(number.toLocaleString());
+// .toLocaleString()は金額の,の表示を自動でしてくれる関数（3桁区切り）
+// String には使えない、int にだけ使える
+
+// const price = typeof number === "number" ? number.toLocaleString() : "intを入れて下さい";
+// console.log(price);
+// typeof 変数名　＝＝＝　”ここは決められた関数の判定値がはいる”
+// "string" "number" "boolean" "object" "undefined" "symbol"いずれかだけ
+
+// const total = (num1, num2) => {
+//   return num1 + num2 >  100 ? "100超えてます" : "100以下です";
+// }
+// console.log(total(50,60));
+
+// ||は左がfalseの場合｜｜右側を返す
+// const number = null;
+// const number2 = number || "未入力です";
+// console.log(number2);
+
+// ＆＆は左がtrueの場合｜｜右側を返す
+// const number = 100;
+// const number2 = number && "何か入力されました";
+// console.log(number2);
